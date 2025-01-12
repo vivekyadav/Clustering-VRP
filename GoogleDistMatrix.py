@@ -151,7 +151,7 @@ def getquery(points, x , start, end):
     destinations = []
     for j in range(start, end):
         destinations.append(','.join(points[j]))
-    query = "origins=%s&destinations=%s&key=AIzaSyDrn-iJysQvb8X0xIhkN2oYTYAdt4MR3sE" % (origins, '|'.join(destinations))
+    query = "origins=%s&destinations=%s" % (origins, '|'.join(destinations))
     #queryfile = open("C:\\Users\\vivek\\Milk Production\\Queries\\googlequery%s_%s_%s.txt" % (x, start, end), 'w')
     #queryfile.write(query)
     return query
